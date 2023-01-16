@@ -1,0 +1,15 @@
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\bin\Debug\net6.0\Example001_HelloWorld.exe
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\bin\Debug\net6.0\Example001_HelloWorld.deps.json
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\bin\Debug\net6.0\Example001_HelloWorld.runtimeconfig.json
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\bin\Debug\net6.0\Example001_HelloWorld.dll
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\bin\Debug\net6.0\Example001_HelloWorld.pdb
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.csproj.AssemblyReference.cache
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.AssemblyInfoInputs.cache
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.AssemblyInfo.cs
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.dll
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\refint\Example001_HelloWorld.dll
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.pdb
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\Example001_HelloWorld.genruntimeconfig.cache
+C:\Users\dispr\OneDrive\Рабочий стол\geekbrains\HelloC#\Lection\Lection001\Example001_HelloWorld\obj\Debug\net6.0\ref\Example001_HelloWorld.dll
