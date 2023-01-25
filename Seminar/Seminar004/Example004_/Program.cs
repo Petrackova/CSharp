@@ -15,7 +15,7 @@ int[] Arr(int lenght)
     {
         result[i] = new Random().Next(0,2);
     }
-return result;
+    return result;
 }
 
 void PrintArr(int[] arr)
