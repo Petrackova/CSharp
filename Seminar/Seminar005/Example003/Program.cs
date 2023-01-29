@@ -1,5 +1,6 @@
 ﻿//Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 int[] ar = Arr(10);
+int a = 5;
 Console.WriteLine(a);
 PrintArr(ar);
 Console.WriteLine(FindNum(ar,a));
