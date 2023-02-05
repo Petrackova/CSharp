@@ -6,10 +6,10 @@
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 */
 System.Console.Write("Значение m:= ");
-int b1 = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Значение n:= ");
-int k1 = Convert.ToInt32(Console.ReadLine());
-int[,] ar = FindArr(b1,k1);
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] ar = FindArr(m,n);
 PrintArr(ar);
 System.Console.WriteLine("Cреднее арифметическое в каждом столбце");
 FindSumm(ar);
@@ -20,24 +20,25 @@ int[,] FindArr(int lenghti, int lenghtj)
     for ( int i = 0; i < lenghti; i++) 
     {
         for ( int j = 0; j < lenghtj; j++) 
-    {
-        result[i,j] = new Random().Next(1,10);
+        {
+            result[i,j] = new Random().Next(1,10);
+        }
     }
-}
-return result;
+    return result;
 }
 
 void PrintArr(int [,] arr)
 {
-for ( int i = 0; i < arr.GetLength(0); i++)
-{
-    for ( int j = 0; j < arr.GetLength(1); j++)
+    for ( int i = 0; i < arr.GetLength(0); i++)
     {
-        System.Console.Write($"{arr[i, j]} ");
+        for ( int j = 0; j < arr.GetLength(1); j++)
+        {
+            System.Console.Write($"{arr[i, j]} ");
+        }
+        System.Console.WriteLine();
     }
-    System.Console.WriteLine();
 }
-}
+
 void FindSumm(int[,] arr)
 { 
     double summ;
@@ -47,11 +48,9 @@ void FindSumm(int[,] arr)
         for ( int j = 0; j < arr.GetLength(1); j++) 
         {
           summ = summ + arr[j,i]; 
-          
         }
         summ = summ/arr.GetLength(1);
         summ = Math.Round(summ,2);
         System.Console.Write($"{summ} ");
-        
     } 
 }
