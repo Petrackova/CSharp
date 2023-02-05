@@ -5,10 +5,10 @@ m = 3, n = 4.
 8 7,8 -7,1 9
 */
 System.Console.Write("Значение m:= ");
-int b1 = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Значение n:= ");
-int k1 = Convert.ToInt32(Console.ReadLine());
-double[,] ar = FindArr(b1,k1);
+int n = Convert.ToInt32(Console.ReadLine());
+double[,] ar = FindArr(m,n);
 PrintArr(ar);
 
 double[,] FindArr(int lenghti, int lenghtj)
@@ -17,22 +17,22 @@ double[,] FindArr(int lenghti, int lenghtj)
     for ( int i = 0; i < lenghti; i++) 
     {
         for ( int j = 0; j < lenghtj; j++) 
-    {
-        result[i,j] = new Random().NextDouble()*100;
-        result[i,j] = Math.Round(result[i,j],2);
+        {
+            result[i,j] = new Random().NextDouble()*40-20;
+            result[i,j] = Math.Round(result[i,j],1);
+        }
     }
-}
-return result;
+    return result;
 }
 
 void PrintArr(double [,] arr)
 {
-for ( int i = 0; i < arr.GetLength(0); i++)
-{
-    for ( int j = 0; j < arr.GetLength(1); j++)
+    for ( int i = 0; i < arr.GetLength(0); i++)
     {
-        System.Console.Write($"{arr[i, j]} ");
+        for ( int j = 0; j < arr.GetLength(1); j++)
+        {
+            System.Console.Write($"{arr[i, j]} ");
+        }
+        System.Console.WriteLine();
     }
-    System.Console.WriteLine();
-}
 }
