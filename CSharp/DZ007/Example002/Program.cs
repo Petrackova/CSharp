@@ -6,15 +6,16 @@
 17 -> такого числа в массиве нет
 */
 System.Console.Write("Значение m:= ");
-int b1 = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Значение n:= ");
-int k1 = Convert.ToInt32(Console.ReadLine());
-int[,] ar = FindArr(b1,k1);
-
-System.Console.Write("Значение N:= ");
-int N = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] ar = FindArr(m,n);
+System.Console.Write("Значение i1:= ");
+int i1 = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Значение j1:= ");
+int j1 = Convert.ToInt32(Console.ReadLine());
 PrintArr(ar);
-System.Console.WriteLine(Indexof(ar,N));
+Indexof(ar,i1,j1);
 
 int[,] FindArr(int lenghti, int lenghtj)
 {
@@ -22,37 +23,42 @@ int[,] FindArr(int lenghti, int lenghtj)
     for ( int i = 0; i < lenghti; i++) 
     {
         for ( int j = 0; j < lenghtj; j++) 
-    {
-        result[i,j] = new Random().Next(1,10);
+        {
+            result[i,j] = new Random().Next(1,10);
+        }
     }
-}
-return result;
+    return result;
 }
 
 void PrintArr(int [,] arr)
 {
-for ( int i = 0; i < arr.GetLength(0); i++)
-{
-    for ( int j = 0; j < arr.GetLength(1); j++)
+    for ( int i = 0; i < arr.GetLength(0); i++)
     {
-        System.Console.Write($"{arr[i, j]} ");
+        for ( int j = 0; j < arr.GetLength(1); j++)
+        {
+            System.Console.Write($"{arr[i, j]} ");
+        }
+        System.Console.WriteLine();
     }
-    System.Console.WriteLine();
-}
 }
 
-int Indexof(int[,] arr, int find)
-{
+void Indexof(int[,] arr, int  i1, int j1)
+{   
+    if ((i1 > arr.GetLength(0)) || (j1 > arr.GetLength(1)))
+    {
+        System.Console.WriteLine($"Элемент в массиве с интексами [{i1}, {j1}] не существует");
+        Environment.Exit(0);
+    }
+    int x = arr[i1,j1];
     for ( int i = 0; i < arr.GetLength(0); i++) 
     {
         for ( int j = 0; j < arr.GetLength(1); j++) 
         {
-            if(arr[i,j]==find)
+            if(arr[i,j]==x)
             {
-                return find;
-            }
-        }
+                Console.WriteLine($"Элемент в массиве с интексами [{i1}, {j1}]:= {arr[i1,j1]}");
+                Environment.Exit(0);
+            } 
+        } 
     }
-    System.Console.Write("Такого числа нет");
-    return 0;
 }
